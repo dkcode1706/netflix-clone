@@ -1,0 +1,160 @@
+  * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .bg {
+            height: 102vh;
+            width: 100vw;
+            box-sizing: border-box;
+            background-image: url(head.jpg);
+            object-fit: none;
+            background-position: top;
+        }
+
+        .up {
+            height: 20vh;
+            width: 95vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 400px;
+            position: absolute;
+            z-index: 1;
+            top: 4px;
+            left: 22px;
+        }
+
+        .shade {
+            background-color: rgb(0 0 0);
+            opacity: .5;
+            height: 10vh;
+        }
+
+        .logo {
+            position: relative;
+            top: -24px;
+            left: -103px;
+            filter: brightness(1.5) contrast(2) hue-rotate(-5deg) drop-shadow(2px 4px 6px black);
+        }
+
+        .i-r-cont {
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -25px;
+            gap: 12px;
+        }
+
+        .up-right {
+            display: inline-flex;
+            color: white;
+        }
+
+        .i-img {
+            height: 19px;
+            position: relative;
+            top: 5px;
+        }
+
+        .lan {
+            padding: 3px 18px;
+            border: .2px solid white;
+            background-color: rgba(232, 232, 232, 0.134);
+            border-radius: 3px;
+
+        }
+
+        .ii-img {
+            height: 12px;
+        }
+
+        .sign {
+            padding: 5px 15px;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+        }
+
+        .sign a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .ii-cont {
+            height: 92vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .ii-head {
+            width: 55vw;
+            font-size: 32px;
+        }
+
+        .m-head {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .i-para {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .ii-para {
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .i-input {
+            display: flex;
+            gap: 12px;
+            padding: 18px 10px;
+            width: 60vw;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textbox {
+            border: 1px solid white;
+            padding: 23px 35px;
+            border-radius: 3px;
+            background-color:rgb(28 25 25 / 52%);
+            color: white;
+        }
+
+        .ii-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 45px;
+            background-color: red;
+            font-size: larger;
+        }
+
+        .iii-img {
+            height: 22px;
+            transform: rotate(-90deg);
+        }
