@@ -7,9 +7,33 @@
     width: 102vw;
     margin: 15px;
     padding: 12px;
-    border-radius: 60px;
+    border-radius: 100%;
     border-top: 5px solid red;
+    /* background: linear-gradient(25deg,rgba(255, 0, 0, 0), rgb(249, 97, 97) ,rgba(247, 108, 108, 0.404)); */
+
 }
+
+.div-lin {
+    background-color: #89000000;
+    width: 100vw;
+    height: 5px;
+    box-shadow: 0px 6px 13px 4px rgb(13 81 255);
+    border-radius: 100%;
+
+}
+
+.lin {
+    width: 50vw;
+    box-shadow: 3px 20px 20px 2px rgb(13 81 255);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: -12px;
+}
+
 
 .iii-head {
     width: 55vw;
@@ -22,16 +46,50 @@
     font-size: larger;
 }
 
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide button {
+    background-color: rgba(234, 228, 228, 0.336);
+}
+#right-button{
+    position: relative;
+    left: 10pzx;
+}
+
+#right-scroll {
+    transform: rotate(186deg);
+}
+
+.arrow {
+    width: 50px;
+    ;
+    height: 50px;
+    ;
+}
+
+.hide {
+    display: none;
+}
+
 .v-cont {
+
+    /* display: none; */
     display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     overflow: auto;
-    margin: 0px 160px;
+    margin: 0px 10px;
     overflow-y: hidden;
 }
 
@@ -46,8 +104,10 @@
 
 }
 
-.item:hover {
+.item img:hover {
     transform: scale(1.1);
+    transition-delay: .2s;
+    transition-duration: .21s;
 }
 
 #down-head {
@@ -143,6 +203,9 @@
     padding: 29px;
     font-size: 1.5em;
 }
+.q:hover{
+    background-color: rgba(128, 128, 128, 0.599);
+}
 
 .plus {
     height: 45px;
@@ -150,11 +213,12 @@
     left: 1065px;
     top: -42px;
 }
-.plus:hover{
-    transform:rotate(45deg);
+
+.plus:hover {
+    transform: rotate(45deg);
     transition: transform;
     transition-timing-function: ease-in-out;
-    transition-duration: .5sec;
+    transition-duration: 1s;
     transition-delay: 3sec;
 }
 

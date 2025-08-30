@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>netflix clone.</title>
+    <link rel="icon" href="images/Screenshot_2025-08-27_152417-removebg-preview.png">
     <link rel="stylesheet" href="CSS FILES/head.css">
     <link rel="stylesheet" href="CSS FILES/section.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,12 +66,20 @@
     </header>
     <main>
         <section>
-            <div class="iv-cont">
-                <div class="iii-head">
+            <div class="iv-cont light">
+                <div class="lin">
+                    <div class="div-lin"></div>
+                </div>
+                <div class="iii-head hide">
                     <h3>Trending Now</h3>
                 </div>
             </div>
             <div class="v-cont">
+                <div class="slide">
+                    <button>
+                        <img src="images/arrow.png" alt="move" class="arrow" id="left-scroll">
+                    </button>
+                </div>
                 <div class="grid">
                     <span class="item">
                         <button class="iii-button">
@@ -142,6 +151,11 @@
                             </a>
                         </button>
                     </span>
+                </div>
+                <div class="slide">
+                    <button id="right-button">
+                        <img src="images/download-removebg-preview.png" alt="move" class="arrow" id="right-scroll">
+                    </button>
                 </div>
 
             </div>
