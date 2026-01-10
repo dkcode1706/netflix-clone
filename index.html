@@ -8,6 +8,8 @@
     <link rel="icon" href="images/Screenshot_2025-08-27_152417-removebg-preview.png">
     <link rel="stylesheet" href="CSS FILES/head.css">
     <link rel="stylesheet" href="CSS FILES/section.css">
+    <link rel="stylesheet" href="CSS FILES/faq.css">
+    <link rel="stylesheet" href="CSS FILES/phone_small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,8 +30,13 @@
                     <div class="up-right">
                         <span class="lan">
                             <img src="background/trans-img.png" alt="translate" class="i-img">
-                            English
-                            <img src="background/down arrow.png" alt="more" class="ii-img">
+                           <form class="lan-form" >
+                            <select>
+                                <option value="en" selected>English</option>
+                                <option value="hi" disabled>Hindi</option>
+                            </select>
+                           </form>
+                            <!-- <img src="background/down arrow.png" alt="more" class="ii-img"> -->
                         </span>
                     </div>
                     <span>
@@ -76,11 +83,11 @@
             </div>
             <div class="v-cont">
                 <div class="slide">
-                    <button>
-                        <img src="images/arrow.png" alt="move" class="arrow" id="left-scroll">
+                    <button id="left-scroll">
+                        <img src="images/arrow.png" alt="move" class="arrow" id="left-scroll-img">
                     </button>
                 </div>
-                <div class="grid">
+                <div class="grid" id="top-movie">
                     <span class="item">
                         <button class="iii-button">
                             <a href="#">
@@ -153,8 +160,8 @@
                     </span>
                 </div>
                 <div class="slide">
-                    <button id="right-button">
-                        <img src="images/download-removebg-preview.png" alt="move" class="arrow" id="right-scroll">
+                    <button id="right-scroll">
+                        <img src="images/download-removebg-preview.png" alt="move" class="arrow" id="right-scroll-img">
                     </button>
                 </div>
 
@@ -575,29 +582,55 @@
                     <h3>Frequently Asked Questions</h3>
                 </div>
                 <div class="q-cont width">
-                    <div class="q">
+                    <div class="q" id="q-0">
                         <p>What is Netflix?</p>
-                        <img src="images/plus img.png" alt="more" class="plus">
+                        <img src="images/plus img.png" alt="more" class="plus" id="p-0">
                     </div>
-                    <div class="q">
+                    <div id="a-0" class="ans">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <br>
+                        <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                    <div class="q" id="q-1">
                         <p>How much does Netflix cost?</p>
-                        <img src="images/plus img.png" alt="more" class="plus">
+                        <img src="images/plus img.png" alt="more" class="plus" id="p-1">
                     </div>
-                    <div class="q">
+                    <div class="ans" id ="a-1">
+                        <p>
+                            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649/month.
+                        </p>
+                    </div>
+                    <div class="q" id="q-2">
                         <p>Where can I watch?</p>
-                        <img src="images/plus img.png" alt="more" class="plus">
+                        <img src="images/plus img.png" alt="more" class="plus" id="p-2">
                     </div>
-                    <div class="q">
+                    <div class="ans" id="a-2">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                        <br>
+                        <p>You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                    </div>
+                    <div class="q" id="q-3">
                         <p>How do I cancel?</p>
-                        <img src="images/plus img.png" alt="more" class="plus">
+                        <img src="images/plus img.png" alt="more" class="plus" id="p-3">
                     </div>
-                    <div class="q">
+                    <div class="ans" id="a-3">
+                        <p>Netflix is flexible. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                    </div>
+                    <div class="q" id="q-4">
                         <p>What can I watch on Netflix?</p>
-                        <img src="images/plus img.png" alt="more" class="plus">
+                        <img src="images/plus img.png" alt="more" class="plus" id="p-4">
                     </div>
-                    <div class="q">
+                    <div class="ans" id="a-4">
+                        <p>Netflix has an extensive library of feature films, documentaries, shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                    <div class="q" id="q-5">
                         <p>Is Netflix good for kids?</p>
-                        <img src="images/plus img.png" alt="more" class="plus">
+                        <img src="images/plus img.png" alt="more" class="plus" id="p-5">
+                    </div>
+                    <div class="ans" id="a-5">
+                        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
+                        <br>
+                        <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
                     </div>
                 </div>
             </div>
@@ -696,11 +729,21 @@
             </div>
             <div class="con iii-head" id="down-lang">
                 <div class="up-right">
-                    <span class="lan">
+                    <!-- <span class="lan">
                         <img src="background/trans-img.png" alt="translate" class="i-img">
                         English
                         <img src="background/down arrow.png" alt="more" class="ii-img">
-                    </span>
+                    </span> -->
+                      <span class="lan">
+                            <img src="background/trans-img.png" alt="translate" class="i-img">
+                           <form class="lan-form" >
+                            <select>
+                                <option value="en" selected>English</option>
+                                <option value="hi" disabled>Hindi</option>
+                            </select>
+                           </form>
+                            <!-- <img src="background/down arrow.png" alt="more" class="ii-img"> -->
+                        </span>
                 </div>
             </div>
 
@@ -715,7 +758,7 @@
 
         </div>
     </footer>
-    <script src="new.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

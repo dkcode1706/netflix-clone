@@ -1,0 +1,39 @@
+/* phone responsive for large screen**/
+
+@media only screen and (max-width:395px) {
+
+    .logo {
+        transform: scale(.6);
+        position: relative;
+        left: -81px;
+    }
+
+    .lan {
+        transform: scale(.6);
+        position: relative;
+        left: -530px;
+    }
+
+    .sign {
+        position: relative;
+        width: 100px;
+        left: -540px;
+        transform: scale(.7);
+    }
+
+    .ii-head {
+        width: 80px;
+    }
+
+    .m-head {
+        transform: scale(.7);
+        width: 100%;
+        position: relative;
+        left: -75px;
+
+    }
+
+    .m-head h1 {
+        width: 100%;
+    }
+}

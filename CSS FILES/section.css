@@ -60,7 +60,7 @@
     left: 10pzx;
 }
 
-#right-scroll {
+#right-scroll-img {
     transform: rotate(186deg);
 }
 
@@ -91,6 +91,7 @@
     overflow: auto;
     margin: 0px 10px;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .item {
@@ -104,7 +105,7 @@
 
 }
 
-.item img:hover {
+.item:hover {
     transform: scale(1.1);
     transition-delay: .2s;
     transition-duration: .21s;
@@ -201,6 +202,7 @@
     background-color: rgb(73 72 72 / 68%);
     margin: 12px;
     padding: 29px;
+    width: 100%;
     font-size: 1.5em;
 }
 .q:hover{
@@ -210,11 +212,11 @@
 .plus {
     height: 45px;
     position: relative;
-    left: 1065px;
+    left: 90%;
     top: -42px;
 }
 
-.plus:hover {
+.plus:active {
     transform: rotate(45deg);
     transition: transform;
     transition-timing-function: ease-in-out;
